@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method='POST' action="/">
+        <input type='text' name='age' placeholder="enter age">
+        <input type='text' name='gender' placeholder="enter gender">
+        <input type='text' name='college' placeholder="enter college location">
+        <input type='text' name='stress' placeholder="enter stress level">
+        <input type='text' name='fos' placeholder="enter field of study">
+        <input type='text' name='insom' placeholder="enter imsomnia experience">
+        <input type='text' name='social' placeholder="enter social circle">
+        <input type='text' name='head' placeholder="enter headache frequency">
+        <input type='text' name='screen' placeholder="enter screentime">
+        <input type='text' name='suicidal' placeholder="enter suicidal thoughts">
+        <input type='text' name='conc' placeholder="enter concentration">
+        <input type='text' name='phy' placeholder="enter exercise">
+        <input type='text' name='anx' placeholder="enter anxiety">
+        <input type='text' name='grow' placeholder="enter growth">
+        <input type='text' name='ill' placeholder="enter mental illness">
+      
+        <input type='submit'>
+    </form>
+    {% if ans %}
+      <h1>answer is {{ans}}</h1>
+
+    {% endif %}
+</body>
+</html>
+
