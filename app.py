@@ -8,7 +8,7 @@ app=Flask(__name__)
 def start():
     return render_template("index.html")
 
-@app.route('/',methods=['POST'])
+@app.route('/form',methods=['POST'])
 def getPred():
     if request.method=='POST':  
         names=['age','stress','insom','social','head','suicidal','conc','phy','anx','grow','ill']
@@ -23,7 +23,7 @@ def getPred():
         pred=mentalPredictor.predict(arr)
 
         
-        return render_template("index.html",ans=pred)
+        return (pred)
 
 if __name__=='__main__':
     app.run(debug=True)
