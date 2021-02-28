@@ -23,7 +23,7 @@ def getPred():
         pred=mentalPredictor.predict(arr)
 
         
-        return (pred)
+        return str(pred)
 
 if __name__=='__main__':
     app.run(debug=True)
