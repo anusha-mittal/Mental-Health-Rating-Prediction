@@ -8,7 +8,7 @@ app=Flask(__name__)
 def start():
     return render_template("index.html")
 
-@app.route('/form',methods=['POST'])
+@app.route('/',methods=['POST'])
 def getPred():
     if request.method=='POST':  
         names=['age','stress','insom','social','head','suicidal','conc','phy','anx','grow','ill']
